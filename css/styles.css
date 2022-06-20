@@ -1,0 +1,80 @@
+:root {
+    --primary-text-color :#212121;
+    --titel-text-color :#757575;
+    --accent-text-color :#2196f3;
+    --primary-bg-color :#ffffff;
+    --bg-hero-color :#2F303A;
+    --footer-text-color :rgba(255, 255, 255, 0.6);
+    --bg-filter-color :#F5F4FA;
+}
+
+/* .page { 
+    background-color: var(--fon-text-color);
+    color: var(--primary-text-color);
+} */
+.list {
+    list-style: none;
+}
+/* logo */
+.logo {
+    color: #000000;
+}
+.logo-span {
+    color: #2196F3;
+}
+/* site-nav */
+.site-nav .current {
+    color: var(--accent-text-color);
+}
+.site-nav a {
+    color: var(--primary-text-color);
+}
+.site-nav :hover,
+.site-nav :focus {
+    color: var(--accent-text-color);
+}
+.site-phone a {
+    color: var(--titel-text-color);
+}
+.site-phone :hover,
+.site-phone :focus {
+    color: var(--accent-text-color);
+}
+/* hero-titei */
+.hero-titel {
+    color: var(--primary-bg-color);
+    background-color: var(--bg-hero-color);
+}
+/* Button */
+.button {
+}
+.button.primary {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-text-color);
+}
+.filter .primary {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-text-color);
+}
+.filter .secondery {
+    color: var(--primary-text-color);
+    background-color: var(--bg-filter-color);
+}
+
+/* section */
+.section-titel {
+    color: var(--primary-text-color);
+}
+.desc {
+    color: var(--titel-text-color);
+}
+/* Подвал */
+.footer-phone {
+    color: var(--footer-text-color);
+}
+.footer-text {
+    color: var(--primary-bg-color);
+}
+.site-footer {
+    background-color: var(--bg-hero-color);
+}

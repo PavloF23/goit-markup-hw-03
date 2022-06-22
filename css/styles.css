@@ -21,6 +21,10 @@
 .list {
     list-style: none;   
 }
+a {
+    text-decoration: none;
+}
+
 .subtitel {
     color: var(--primary-text-color);
 }
@@ -36,14 +40,14 @@
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
     
     /* font-family: Oleo Script;
     font-size: 26px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 1.4;
     letter-spacing: 0.03em;
     text-align: left; */
 }
@@ -63,6 +67,8 @@
 }
 .site-nav a {
     color: var(--primary-text-color);
+
+    font-weight: 500;
 }
 .site-nav :hover,
 .site-nav :focus {
@@ -74,7 +80,7 @@
     /* font-family: Roboto;
     font-size: 14px; */
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-align: left;
 }
@@ -91,9 +97,10 @@
     /* font-family: Roboto; */
     font-size: 44px;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 1.4;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
 }
 /* Button */
 .button {
@@ -102,10 +109,10 @@
     color: var(--primary-bg-color);
     background-color: var(--accent-text-color);
 
-    font-family: Roboto;
+    font-family: Inherit;
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.8;
     letter-spacing: 0.06em;
     text-align: center;
 }
@@ -118,10 +125,10 @@
     color: var(--primary-text-color);
     background-color: var(--bg-card-color);
 
-    font-family: Roboto;
+    font-family: inherit;
     font-size: 16px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -133,7 +140,7 @@
     /* font-family: Roboto;
     font-size: 14px; */
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-align: left;
 }
@@ -141,11 +148,12 @@
     color: var(--titel-text-color);
 
     /* font-family: Roboto;
-    font-size: 14px; */
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400; */
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
+    text-transform: uppercase;
 }
 /* Чем мы занимаемся, наша команда */
 .subject {
@@ -154,7 +162,7 @@
     /* font-family: Roboto; */
     font-size: 36px;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -164,15 +172,15 @@
     /* font-family: Roboto; */
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
 }
 .subject-desc {
     /* font-family: Roboto; */
     font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    /* font-weight: 400; */
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -181,36 +189,41 @@
     /* font-family: Roboto; */
     font-size: 18px;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 1.7;
     letter-spacing: 0.06em;
     text-align: left;
 }
 .lead {
     /* font-family: Roboto; */
     font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
+    /* font-weight: 400; */
+    line-height: 1.6;
     letter-spacing: 0.03em;
     text-align: left;
 }
 /* Подвал */
+footer {
+    background-color: var(--bg-hero-color);
+}
+address {
+    font-style: normal;
+} 
+
 .footer-phone { 
     color: var(--footer-text-color);
 
-    font-style: normal;
 }
 .footer-text {
     color: var(--primary-bg-color);
 
-    font-style: normal;
+    
 }
 .site-footer  {
-    background-color: var(--bg-hero-color);
-
+    
     /* font-family: Roboto;
     font-size: 14px; */
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
 }

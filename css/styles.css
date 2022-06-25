@@ -28,9 +28,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-section {
+/* section {
   outline: 2px solid tomato;
-}
+} */
 /* знімае крапочкі на переліку */
 .list {
   list-style: none;

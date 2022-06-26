@@ -89,6 +89,9 @@ a {
 
   font-family: Raleway, sans-serif;
 }
+.logo.footer {
+  color: var(--primary-bg-color);
+}
 /* site-nav */
 .site-nav .current {
   color: var(--accent-text-color);
@@ -219,6 +222,9 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section.top {
+  padding-top: 0;
+}
 .section .list {
   display: flex;
   margin: 0 auto;
@@ -342,7 +348,7 @@ section {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filter .item + .item {
   margin-left: 8px;
@@ -354,7 +360,7 @@ section {
   margin-left: -30px;
 }
 .projekt .item {
-  width: calc((92%-90px) / 3);
+  width: calc((100% - 90px) / 3);
   margin-top: 30px;
   margin-left: 30px;
   /* margin-right: 15px;
@@ -366,7 +372,9 @@ section {
 }
 .item-desc {
   margin: 0;
-  width: 370px;
+  border-left: 1px solid var(--bg-group-color);
+  border-bottom: 1px solid var(--bg-group-color);
+  border-right: 2px solid var(--bg-group-color);
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -381,11 +389,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.container.address {
-  margin-top: 20px;
-}
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 .footer-phone {
   color: var(--footer-text-color);

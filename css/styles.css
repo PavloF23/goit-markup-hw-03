@@ -18,8 +18,6 @@
 *::after */
 
 body {
-  width: 1600px;
-
   margin: 0;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -49,18 +47,16 @@ a {
 }
 /* контейнер для центрування та обмеження контенту */
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* margin: 0 auto; */
 }
 
 /* Верхня линия */
 .header {
   background-color: var(--primary-bg-color);
-  width: 1600px;
   /* height: 80px; */
 }
 .main-header {
@@ -70,6 +66,8 @@ a {
 }
 /* logo */
 .logo {
+  margin-right: 93px;
+
   color: var(--logo-text-color);
 
   font-family: Raleway;
@@ -102,7 +100,6 @@ a {
 }
 .site-nav.list {
   display: flex;
-  margin-left: 93px;
 }
 .site-nav .link {
   display: block;
@@ -154,8 +151,8 @@ a {
   background-color: var(--bg-hero-color);
   padding: 0;
   text-align: center;
-  width: 1600px;
-  /* height: 600px; */
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-titel {
@@ -218,15 +215,19 @@ a {
 
 /* особености */
 /* section */
-.section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.section.list {
+.section .list {
   display: flex;
-
-  width: 1170px;
   margin: 0 auto;
+}
+.section-itim {
+  width: calc((100%-90px) / 4);
+}
+.section-itim:not(:nth-last-child(-n + 1)) {
+  margin-right: 30px;
 }
 .section-titel {
   margin-top: 0;
@@ -251,10 +252,13 @@ a {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 /* Чем мы занимаемся, наша команда */
 .subject {
+  margin: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-text-color);
 
   /* font-family: Roboto; */
@@ -264,7 +268,15 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.card-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* h3 */
 .subject-titel {
+  margin: 0;
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
 
   /* font-family: Roboto; */
@@ -275,6 +287,8 @@ a {
   text-align: center;
 }
 .subject-desc {
+  margin: 0;
+
   /* font-family: Roboto; */
   font-size: 16px;
   /* font-weight: 400; */
@@ -313,41 +327,50 @@ a {
   letter-spacing: 0.06em;
   text-align: left;
 
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 24px;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 .lead {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: left;
-
-  margin-left: 24px;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
-.filter .itim + .itim {
+.filter .item + .item {
   margin-left: 8px;
 }
 .projekt {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 34px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
-.projekt .itim {
-  width: 370px;
-  /* width: calc((92%-90px) / 3); */
-  margin-right: 15px;
+.projekt .item {
+  width: calc((92%-90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+  /* margin-right: 15px;
   margin-left: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
-.projekt .itim:nth-last-child(-n + 3) {
+.projekt .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+.item-desc {
+  margin: 0;
+  width: 370px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
 }
 /* .projekt:nth-child(3n) {
   margin-right: 0;
@@ -355,7 +378,11 @@ a {
 /* Подвал */
 footer {
   background-color: var(--bg-hero-color);
-  width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container.address {
+  margin-top: 20px;
 }
 address {
   font-style: normal;
@@ -373,4 +400,10 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-align: left;
+}
+/* .site-footer .item {
+  margin-bottom: 9px;
+} */
+.site-footer .item:not(:nth-last-child(-n + 1)) {
+  margin-bottom: 9px;
 }

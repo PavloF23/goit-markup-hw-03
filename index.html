@@ -47,36 +47,38 @@
         <button class="button primary" type="button">Заказать услугу</button>
       </section>
       <!--Особенности-->
-      <section class="container section">
-        <!-- скритий логічний заголовок -->
-        <h2 hidden>Особенности</h2>
-        <!-- скритий логічний заголовок -->
-        <ul class="section list">
-          <li>
-            <h3 class="section-titel">Внимание к деталям</h3>
-            <p class="text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-titel">Пунктуальность</h3>
-            <p class="text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-titel">Планирование</h3>
-            <p class="text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-titel">Современные технологии</h3>
-            <p class="text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <!-- скритий логічний заголовок -->
+          <h2 hidden>Особенности</h2>
+          <!-- скритий логічний заголовок -->
+          <ul class="list">
+            <li class="section-itim">
+              <h3 class="section-titel">Внимание к деталям</h3>
+              <p class="text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="section-itim">
+              <h3 class="section-titel">Пунктуальность</h3>
+              <p class="text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="section-itim">
+              <h3 class="section-titel">Планирование</h3>
+              <p class="text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="section-itim">
+              <h3 class="section-titel">Современные технологии</h3>
+              <p class="text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Чем мы занимаемся-->
       <section class="container section">
@@ -94,23 +96,31 @@
           <ul class="team list">
             <li class="itim">
               <img src="./images/imgphoto1.jpg" alt="Igor Demyanenko" width="270" />
-              <h3 class="subject-titel">Игорь Демьяненко</h3>
-              <p class="subject-desc" lang="en">Product Designer</p>
+              <div class="card-desc">
+                <h3 class="subject-titel">Игорь Демьяненко</h3>
+                <p class="subject-desc" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="itim">
               <img src="./images/imgphoto2.jpg" alt="Olga Repina" width="270" />
-              <h3 class="subject-titel">Ольга Репина</h3>
-              <p class="subject-desc" lang="en">Frontend Developer</p>
+              <div class="card-desc">
+                <h3 class="subject-titel">Ольга Репина</h3>
+                <p class="subject-desc" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="itim">
               <img src="./images/imgphoto3.jpg" alt="Nike Tarasov" width="270" />
-              <h3 class="subject-titel">Николай Тарасов</h3>
-              <p class="subject-desc" lang="en">Marketing</p>
+              <div class="card-desc">
+                <h3 class="subject-titel">Николай Тарасов</h3>
+                <p class="subject-desc" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="itim">
               <img src="./images/imgphoto4.jpg" alt="Mikhail Ermakov" width="270" />
-              <h3 class="subject-titel">Михаил Ермаков</h3>
-              <p class="subject-desc" lang="en">UI Designer</p>
+              <div class="card-desc">
+                <h3 class="subject-titel">Михаил Ермаков</h3>
+                <p class="subject-desc" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -121,21 +131,27 @@
       <div class="container">
         <a href="/index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
       </div>
-      <address class="container">
-        <ul class="site-footer list">
-          <li>
-            <a
-              href="https://goo.gl/maps/yVWfpNULPEzSVUcbA"
-              target="_blank"
-              rel="noreferrer nofollow noopener"
-              class="footer-text"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="maito:info@devstudio.com " class="footer-phone">info@devstudio.com </a></li>
-          <li><a href="tel:+380961111111" class="footer-phone">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container address">
+        <address>
+          <ul class="site-footer list">
+            <li class="item">
+              <a
+                href="https://goo.gl/maps/yVWfpNULPEzSVUcbA"
+                target="_blank"
+                rel="noreferrer nofollow noopener"
+                class="footer-text"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="item">
+              <a href="maito:info@devstudio.com " class="footer-phone">info@devstudio.com </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="footer-phone">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
